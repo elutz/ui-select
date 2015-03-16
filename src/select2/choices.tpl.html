@@ -4,7 +4,7 @@
     <ul role="listbox"
       id="ui-select-choices-{{ $select.generatedId }}" ng-class="{'select2-result-sub': $select.choiceGrouped($group), 'select2-result-single': !$select.choiceGrouped($group) }">
       <li role="option" id="ui-select-choices-row-{{ $select.generatedId }}-{{$index}}" class="ui-select-choices-row" ng-class="{'select2-highlighted': $select.isActive(this), 'select2-disabled': $select.isDisabled(this)}">
-        <div class="select2-result-label ui-select-choices-row-inner"></div>
+        <div class="select2-result-label ui-select-choices-row-inner" onclick="return false;"></div>
       </li>
     </ul>
   </li>
